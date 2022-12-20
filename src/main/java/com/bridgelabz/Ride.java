@@ -2,22 +2,25 @@ package com.bridgelabz;
 
 public class Ride {
 
-    private final double distance;
-    private final int time;
-    public Ride(double distance, int time) {
+    private double distance;
+    private int time;
+    private String rideType;
 
-        /**
-         *  The "this" keyword is used to refer to the current object.
-         */
+    public Ride(double distance, int time, String rideType) {
         this.distance = distance;
         this.time = time;
+        this.rideType = rideType;
     }
+
     public double getDistance() {
         return distance;
     }
 
     public int getTime() {
         return time;
+    }
 
+    public String getRideType() {
+        return rideType;
     }
 }
